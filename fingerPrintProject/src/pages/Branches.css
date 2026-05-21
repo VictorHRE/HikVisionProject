@@ -1,0 +1,134 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  margin-bottom: 10px;
+}
+
+.list-item-name {
+  font-weight: 600;
+  color: #172f4f;
+}
+
+/* Tamaño solo para la página de Sucursales */
+.branches-page.page-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 960px;
+  margin: 0px 0px 32px 210px;
+  color: #172f4f;
+}
+
+.branches-page h3 {
+  margin: 12px 0;
+  color: #172f4f;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.pagination .btn {
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+.data-table th, .data-table td {
+  padding: 12px 16px;
+}
+
+/* Table visual improvements */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+.data-table th {
+  background-color: #f3f6f9; /* subtle header */
+  color: #3b4757;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+.data-table td {
+  border-bottom: 1px solid #eef2f8;
+  vertical-align: middle;
+}
+.data-table tbody tr:hover td {
+  background: #fbfdff;
+}
+
+/* Pagination look & feel (rounded numbers like design) */
+.pagination .btn {
+  background: #eef2f8;
+  color: #172f4f;
+  border: none;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination .btn[disabled] {
+  opacity: 0.4;
+}
+.pagination .btn-primary {
+  background: #172f4f;
+  color: white;
+}
+.pagination .btn-secondary {
+  background: #eef2f8;
+  color: #172f4f;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+/* Minor alignment for action buttons and large row */
+.data-table td .btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+}
+
+/* Align and make table header slimmer */
+.data-table th { padding: 12px 20px; }
+.data-table td { padding: 14px 20px; }
+
+input,
+textarea,
+select,
+.form-input {
+  background-color: #ffffff; 
+  color: #000000;          
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 4px 12px rgba(23,47,79,0.08);
+  border-color: #172f4f;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280; 
+}

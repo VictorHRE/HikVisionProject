@@ -1,0 +1,83 @@
+.filter-form {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-bottom: 24px;
+  align-items: end;
+}
+
+/* History styles commented out by user request */
+
+/* History styles commented out by user request */
+
+/* Tamaño solo para la página de Historial */
+.history-page.page-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px; 
+  margin: 32px 5px 32px 160px;
+  /* asegurar color de texto visible (evita heredar color blanco de :root en modo oscuro) */
+  color: #172f4f;
+}
+
+.history-page h3 {
+  margin: 12px 0;
+  color: #172f4f;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.filter-form select,
+.filter-form input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d7dde7;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color .18s, box-shadow .18s;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Alineación y tamaño del botón de filtro y del área de fechas */
+.filter-form .btn-primary {
+  grid-column: 1 / -1; /* poner el botón en la fila siguiente a lo ancho */
+  justify-self: start; /* alinearlo a la izquierda (cambiar a end si quieres a la derecha) */
+  width: 180px;
+}
+
+.date-range input {
+  min-width: 160px; /* asegurar inputs legibles dentro de la columna */
+}
+
+/* Si quieres que el botón quede al lado derecho en pantallas amplias */
+@media (min-width: 980px) {
+  .filter-form .btn-primary {
+    grid-column: -2 / -1; /* poner el botón en la penúltima columna */
+    justify-self: end;
+    align-self: start;
+    width: 160px;
+  }
+}
+
+.filter-form select:focus,
+.filter-form input:focus {
+  border-color: #172f4f;
+  box-shadow: 0 0 0 3px rgba(23, 47, 79, 0.25);
+}
+
+.date-range {
+  display: flex;
+  gap: 8px;
+}
+
+.type-in {
+    font-weight: 600;
+    color: #2f9e44;
+}
+
+.type-out {
+    font-weight: 600;
+    color: #e6630c;
+}

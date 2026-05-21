@@ -1,0 +1,108 @@
+.sidebar {
+  width: 260px;
+  background-color: #172f4f; /* Azul primario */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  margin-bottom: 32px;
+}
+
+.sidebar-brand .brand-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #e6630c; /* Naranja */
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.sidebar-brand .brand-icon svg {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.sidebar-brand .brand-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  padding: 0 16px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #a9b4c4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.nav-item.active {
+  background-color: #e6630c; /* Naranja */
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav-item svg {
+  font-size: 20px;
+}
+
+/* Make the brand compact on small screens by shrinking the text */
+@media (max-width: 420px) {
+  .sidebar {
+    width: 72px;
+    padding: 16px 8px;
+  }
+  .sidebar-brand .brand-text {
+    display: none;
+  }
+  .nav-item span {
+    display: none;
+  }
+  .nav-item svg {
+    font-size: 20px;
+  }
+}
+
+.sidebar-footer {
+  padding: 0 16px;
+  margin-top: auto;
+}
+
+.logout-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}

@@ -1,0 +1,6 @@
+@AMPMAccessControlAPI_HostAddress = http://localhost:5167
+
+GET {{AMPMAccessControlAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+.app-layout {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px; /* Ancho del sidebar */
+  padding: 24px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}

@@ -1,0 +1,244 @@
+.page-container {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Tamaño solo para la página de Empleados */
+.employees-page.page-container {
+  box-sizing: border-box;
+  width: 100%;
+  /* menos ancho maximo para content más compacto */
+  max-width: 1400px;
+  min-width: 820px;
+  padding: 18px;
+}
+
+.page-header {
+  font-size: 20px;
+  font-weight: 600;
+  color: #172f4f;
+  margin-bottom: 20px;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.add-form .form-input:not(:first-child) {
+  max-width: 320px;
+}
+
+.form-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #d7dde7;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .18s, box-shadow .18s;
+  /* usar color de texto oscuro para inputs (antes estaba blanco y ocultaba texto en temas oscuros) */
+  color: #172f4f;
+}
+
+.form-input:focus {
+  border-color: #172f4f;
+  box-shadow: 0 0 0 3px rgba(23, 47, 79, 0.25);
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform .12s, box-shadow .12s;
+}
+
+/* Small button utility */
+.btn-sm {
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.btn-search { /* align to the input height and left margin */
+  align-self: center;
+  height: 38px;
+}
+
+.btn-primary {
+  background-color: #172f4f;
+  color: #fff;
+  box-shadow: 0 4px 12px -4px rgba(23, 47, 79, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px -4px rgba(23, 47, 79, 0.4);
+}
+
+.btn-secondary {
+  background-color: #eef2f8;
+  color: #172f4f;
+}
+
+.btn-secondary:hover {
+  background-color: #dfe6ef;
+}
+
+.btn-danger {
+    background-color: #fce8e6;
+    color: #c92a2a;
+}
+
+.btn-danger:hover {
+    background-color: #ffc9c9;
+}
+
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #eef2f8;
+}
+
+.data-table th {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5a6678;
+  text-transform: uppercase;
+  background-color: #f9fafb;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table td {
+  font-size: 13px;
+  color: #172f4f;
+}
+
+.actions-cell {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.status-active {
+    color: #2f9e44;
+    font-weight: 600;
+}
+
+.status-inactive {
+    color: #c92a2a;
+    font-weight: 600;
+}
+
+/* Simple modal for associating a store */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.modal {
+  background: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  width: 520px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+/* asegurar que el título del modal sea legible sobre fondo blanco */
+.modal h3 {
+  margin: 0 0 12px 0;
+  color: #172f4f;
+  font-size: 18px;
+}
+.modal label {
+  display: block;
+  color: #172f4f;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.modal .form-grid label {
+  text-align: right;
+  margin-bottom: 0; /* grid handles spacing */
+}
+
+/* Layout: label + select in a two-column grid for tidy alignment */
+.modal .form-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 12px 14px;
+  align-items: center;
+}
+.modal .form-row {
+  display: contents; /* Use form-grid parent's columns */
+}
+.modal .form-input {
+  width: 100%;
+}
+
+/* Inputs in modal should use the same styling as text inputs so text is visible */
+.modal select.form-input, .modal input.form-input {
+  background-color: #fff;
+  color: #172f4f;
+  border: 1px solid #d7dde7;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.modal select.form-input:focus, .modal input.form-input:focus {
+  border-color: #172f4f;
+  box-shadow: 0 0 0 3px rgba(23,47,79,0.12);
+}
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.row-message {
+  margin-top: 6px;
+  padding: 6px 8px;
+  background: rgba(220, 53, 69, 0.06);
+  color: #c92a2a;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.huella-status {
+  margin-bottom: 6px;
+}
+.huella {
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.huella-associated {
+  color: #155724;
+  background: rgba(21, 87, 36, 0.06);
+  border: 1px solid rgba(21, 87, 36, 0.08);
+}
+.huella-not-associated {
+  color: #7a1515;
+  background: rgba(201, 42, 42, 0.06);
+  border: 1px solid rgba(201, 42, 42, 0.08);
+}

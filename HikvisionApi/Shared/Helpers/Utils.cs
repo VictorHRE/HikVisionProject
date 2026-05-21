@@ -1,0 +1,48 @@
+﻿using System.Globalization;
+using System.Text.RegularExpressions;
+
+
+namespace Shared.Helpers;
+
+public static class Utils
+{
+	public static string DateToString(DateTime date)
+	{
+		return date.ToString("s", CultureInfo.CurrentCulture);
+	}
+
+	public static DateTime StringToDate(string date)
+	{
+		return DateTime.ParseExact(date, "s", CultureInfo.CurrentCulture);
+	}
+
+	public static string ToSnake(this string text)
+	{
+		return string.Concat(text.Select((x, i) =>
+				i > 0 && char.IsUpper(x) ? "_" + x : x.ToString(CultureInfo.InvariantCulture)))
+			.ToLowerInvariant();
+	}
+
+	public static string ToCamelFirstUpper(this string text)
+	{
+		var textInfo = new CultureInfo(CultureInfo.CurrentCulture.ToString(), false).TextInfo;
+		return textInfo.ToTitleCase(text).Replace("_", string.Empty);
+	}
+
+	public static bool IsValidIp(this string ipAddress)
+	{
+
+		string pattern = @"^(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)){3}$";
+
+		return Regex.IsMatch(ipAddress, pattern);
+	}
+
+	public static bool IsValidEmail(this string email)
+	{
+		string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+
+		return Regex.IsMatch(email, pattern);
+	}
+
+
+}

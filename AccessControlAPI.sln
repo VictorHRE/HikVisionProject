@@ -1,0 +1,61 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11612.150 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessControlAPI", "HikvisionApi\AccessControlAPI\AccessControlAPI.csproj", "{8C663A50-6B54-4AE3-8D68-5535D5AF84E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "HikvisionApi\Domain\Domain.csproj", "{BEE2286B-04D2-4C3D-90CA-63702AAAEB87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "HikvisionApi\Application\Application.csproj", "{18D53870-1D5F-4482-A390-605CB58DB569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "HikvisionApi\Shared\Shared.csproj", "{C1AF95F1-3BFF-46C9-ACF2-BE2F43942826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "HikvisionApi\Infrastructure\Infrastructure.csproj", "{C9813477-0B28-4632-8E1A-B94D7845EF94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralHubAPI", "HikvisionApi\CentralHubAPI\CentralHubAPI.csproj", "{D8B4D06E-D28E-4297-A61A-86F7A7E59550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C663A50-6B54-4AE3-8D68-5535D5AF84E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C663A50-6B54-4AE3-8D68-5535D5AF84E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C663A50-6B54-4AE3-8D68-5535D5AF84E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C663A50-6B54-4AE3-8D68-5535D5AF84E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE2286B-04D2-4C3D-90CA-63702AAAEB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE2286B-04D2-4C3D-90CA-63702AAAEB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE2286B-04D2-4C3D-90CA-63702AAAEB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE2286B-04D2-4C3D-90CA-63702AAAEB87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D53870-1D5F-4482-A390-605CB58DB569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D53870-1D5F-4482-A390-605CB58DB569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D53870-1D5F-4482-A390-605CB58DB569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D53870-1D5F-4482-A390-605CB58DB569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1AF95F1-3BFF-46C9-ACF2-BE2F43942826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1AF95F1-3BFF-46C9-ACF2-BE2F43942826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1AF95F1-3BFF-46C9-ACF2-BE2F43942826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1AF95F1-3BFF-46C9-ACF2-BE2F43942826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9813477-0B28-4632-8E1A-B94D7845EF94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9813477-0B28-4632-8E1A-B94D7845EF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9813477-0B28-4632-8E1A-B94D7845EF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9813477-0B28-4632-8E1A-B94D7845EF94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B4D06E-D28E-4297-A61A-86F7A7E59550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B4D06E-D28E-4297-A61A-86F7A7E59550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B4D06E-D28E-4297-A61A-86F7A7E59550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B4D06E-D28E-4297-A61A-86F7A7E59550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76B6B9EB-3AF8-4FA0-89CB-30983253EE91}
+	EndGlobalSection
+EndGlobal
+
